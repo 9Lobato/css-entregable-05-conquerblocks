@@ -1,0 +1,20 @@
+@use 'footer';
+@use 'forms';
+@use 'grid';
+@use 'header';
+@use 'navbar';
+@use 'sidebar';
+@use '../abstracts/mixins' as mix;
+
+html {
+    max-width: 768px;
+    @include mix.breakpoint(tablethorizontal) {
+        max-width: 1024px;
+    }
+    @include mix.breakpoint(desktop) {
+        max-width: 1200px;
+    }
+     @include mix.breakpoint(desktopxl) {
+        max-width: 1440px;
+    }
+}

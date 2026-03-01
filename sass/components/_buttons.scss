@@ -1,0 +1,34 @@
+/* @use '../abstracts/variables' as vars;
+@use '../base/typography' as tipo; */
+
+.bton1 {
+    height: 30px;
+    margin: 10px;
+    border: 2px solid #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid #ffffff;
+    }
+}
+.bton2 {
+    width: 306px;
+    height: 34px;
+    margin: 0 auto;
+    border: 4px solid #ff7002;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #171717, #8a8a8a);
+    font-size: 18px;
+    text-align: center;
+    color: #ff7002;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        color: #ffffff;
+        border: 4px solid #171717;
+    }
+}

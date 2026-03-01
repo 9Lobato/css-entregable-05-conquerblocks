@@ -1,0 +1,97 @@
+/* @use '../abstracts/variables' as vars; */
+@use '../abstracts/mixins' as mix;
+/* @use '../base/typography' as tipo; */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #171717;
+    padding: 20px 44px;
+    color: white;
+    p:first-of-type {
+        span {
+            font-weight: bold;
+            background: linear-gradient(to right, #62417C, #EE6185, #FFA84B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        align-items: center;
+        a img {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+            display: block;
+        }
+        a:nth-of-type(3) img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            display: block;
+        }
+        a:nth-of-type(4) img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            display: block;
+        }
+        a:nth-of-type(5) img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            display: block;
+        }
+    }
+    p:last-of-type {
+        align-self: flex-end;
+        color: #ABABAB;
+    }
+}
+@include mix.breakpoint(tablet) {
+    footer {
+        flex-direction: row;
+        align-items: center;
+        div {
+            gap: 30px;
+            a img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                display: block;
+            }
+            a:nth-of-type(3) img {
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+                display: block;
+            }
+            a:nth-of-type(4) img {
+                width: 22px;
+                height: 22px;
+                object-fit: contain;
+                display: block;
+            }
+            a:nth-of-type(5) img {
+                width: 34px;
+                height: 34px;
+                object-fit: contain;
+                display: block;
+            }
+        }
+        p:last-of-type {
+            align-self: auto;
+        }
+    }
+}
+@include mix.breakpoint(desktop) {
+    footer {
+    }
+}
