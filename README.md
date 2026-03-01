@@ -1,4 +1,4 @@
-📌 Proyecto — Portfolio Adam Keyes
+📌 Proyecto — Proyecto HTML con estilos
 
 Proyecto de maquetación web estática desarrollado con HTML, SASS y Vite. El objetivo es construir una landing educativa moderna con múltiples secciones de contenido, aplicando diseño responsive mobile-first, organización modular de estilos y control preciso del layout mediante Flexbox.
 
